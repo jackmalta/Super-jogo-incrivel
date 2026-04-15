@@ -2,6 +2,9 @@
 // Você pode escrever seu código neste editor
 //Iniciando o estado idle
 
+
+cria_colisao();
+
 #region variaveis
 velh = 0;
 velv = 0;
@@ -15,7 +18,10 @@ sprites_atuais =
     baixo : spr_ameba_idle_frente
 };
 
+//Variável com as colisões
+var _tile = layer_tilemap_get_id("Colisao");
 
+colisoes = [_tile];
 
 //Meus controles
 up      = 0;
@@ -194,7 +200,7 @@ aplica_velocidade = function()
     velh = (right - left) * max_vel;
     velv = (down - up) * max_vel;
     
-    move_and_collide(velh, velv, all);
+    move_and_collide(velh, velv, colisoes);
 }
 
 

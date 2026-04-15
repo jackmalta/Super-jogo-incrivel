@@ -35,6 +35,9 @@
     "name":"spr_ameba_idle_frente",
     "path":"sprites/spr_ameba_idle_frente/spr_ameba_idle_frente.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_ameba_idle_frente",
+    "path":"sprites/spr_ameba_idle_frente/spr_ameba_idle_frente.yy",
+  },
   "visible":true,
 }
