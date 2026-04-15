@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_ameba_verde_entra",
+  "%Name":"spr_ameba_verde_entrando",
   "bboxMode":0,
   "bbox_bottom":24,
   "bbox_left":0,
@@ -28,7 +28,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"c4b0b70a-ab32-42fc-b5d8-84cde03031ec","blendMode":0,"displayName":"default","isLocked":false,"name":"c4b0b70a-ab32-42fc-b5d8-84cde03031ec","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_ameba_verde_entra",
+  "name":"spr_ameba_verde_entrando",
   "nineSlice":null,
   "origin":7,
   "parent":{
@@ -40,7 +40,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_ameba_verde_entra",
+    "%Name":"spr_ameba_verde_entrando",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -64,7 +64,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_ameba_verde_entra",
+    "name":"spr_ameba_verde_entrando",
     "playback":1,
     "playbackSpeed":10.0,
     "playbackSpeedType":0,
@@ -76,28 +76,28 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cd09d322-f84a-4f38-958c-b3031d1058ba","path":"sprites/spr_ameba_verde_entra/spr_ameba_verde_entra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cd09d322-f84a-4f38-958c-b3031d1058ba","path":"sprites/spr_ameba_verde_entrando/spr_ameba_verde_entrando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c89672da-9fb1-4184-affb-6556db421cc5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"881a5c00-a47d-43d8-84d5-64d2cf274333","path":"sprites/spr_ameba_verde_entra/spr_ameba_verde_entra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"881a5c00-a47d-43d8-84d5-64d2cf274333","path":"sprites/spr_ameba_verde_entrando/spr_ameba_verde_entrando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"15988bac-e606-4566-9b0d-cbf6a3c44ed8","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"489c982b-497a-448f-b40c-c3493946bb64","path":"sprites/spr_ameba_verde_entra/spr_ameba_verde_entra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"489c982b-497a-448f-b40c-c3493946bb64","path":"sprites/spr_ameba_verde_entrando/spr_ameba_verde_entrando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ac700e78-2215-47ff-ba1d-b5d1cafaa642","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8384cc67-9383-477a-a4f3-a9d08bec9aee","path":"sprites/spr_ameba_verde_entra/spr_ameba_verde_entra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8384cc67-9383-477a-a4f3-a9d08bec9aee","path":"sprites/spr_ameba_verde_entrando/spr_ameba_verde_entrando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"4070ac1d-fbd3-412f-b716-0813a3acaf1e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9b8238a-3f4e-415e-93c2-930a8cbf7a2b","path":"sprites/spr_ameba_verde_entra/spr_ameba_verde_entra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9b8238a-3f4e-415e-93c2-930a8cbf7a2b","path":"sprites/spr_ameba_verde_entrando/spr_ameba_verde_entrando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c18dff43-795a-4987-9e4b-2720c60893bd","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ac2b7f2d-4dbd-4b1c-ae12-d5e0ba7ee070","path":"sprites/spr_ameba_verde_entra/spr_ameba_verde_entra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ac2b7f2d-4dbd-4b1c-ae12-d5e0ba7ee070","path":"sprites/spr_ameba_verde_entrando/spr_ameba_verde_entrando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"e17a2ad9-7487-4075-bcba-e2bcf9ce992f","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc5c314c-6b05-4437-8e23-f7f9fcdf7956","path":"sprites/spr_ameba_verde_entra/spr_ameba_verde_entra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc5c314c-6b05-4437-8e23-f7f9fcdf7956","path":"sprites/spr_ameba_verde_entrando/spr_ameba_verde_entrando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"d4ed9db7-890a-4950-afe9-3c76a089ca96","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c295fbf-91a3-4137-a0d6-d77278cdf43a","path":"sprites/spr_ameba_verde_entra/spr_ameba_verde_entra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c295fbf-91a3-4137-a0d6-d77278cdf43a","path":"sprites/spr_ameba_verde_entrando/spr_ameba_verde_entrando.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9db67592-8a87-4929-aaa5-f845232ed4d4","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

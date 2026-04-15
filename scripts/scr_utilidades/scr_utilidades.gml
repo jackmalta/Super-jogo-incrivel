@@ -3,6 +3,7 @@
 
 function troca_sprite(_dir, _struct_sprites)
 {
+    
     switch(_dir)
     {
         case 0: sprite_index = _struct_sprites.lado;  break;

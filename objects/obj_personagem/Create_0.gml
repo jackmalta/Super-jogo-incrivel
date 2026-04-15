@@ -4,7 +4,7 @@
 
 #region variaveis
 
-minhas_sprites = global.lista_sprites.verde;
+minhas_sprites = global.lista_sprites.personagem.verde;
 
 dir = 3;
 

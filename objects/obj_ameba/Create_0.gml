@@ -10,18 +10,24 @@ velh = 0;
 velv = 0;
 max_vel = 1;
 
+//Eu preciso saber quais as minhas informações
+cor_txt         = "verde";
+estado_txt      = "idle";
+entidade_txt    = "ameba";
+ 
+
+
 dir = 0;
-sprites_atuais =
-{
-    lado  : spr_ameba_verde_idle_lado,
-    cima  : spr_ameba_verde_idle_cima,
-    baixo : spr_ameba_verde_idle_baixo
-};
+minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
 
 //Variável com as colisões
 var _tile = layer_tilemap_get_id("Colisao");
 
 colisoes = [_tile, obj_personagem];
+
+
+
+
 
 //Meus controles
 up      = 0;
@@ -46,14 +52,10 @@ estado_entrando = new estado();
 
 estado_idle.inicia = function()
 {
-    sprites_atuais =
-    {
-        lado  : spr_ameba_verde_idle_lado,
-        cima  : spr_ameba_verde_idle_cima,
-        baixo : spr_ameba_verde_idle_baixo
-    }
+    estado_txt = "idle";
+    minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
     
-    troca_sprite(dir, sprites_atuais);
+    troca_sprite(dir, minhas_sprites);
 }
 
 estado_idle.roda = function()
@@ -65,6 +67,21 @@ estado_idle.roda = function()
     if (up or down or left or right)
     {
         troca_estado(estado_walk);
+    }
+    
+    
+    var _buraco = instance_place(x, y - 5, obj_buraco_menu);
+    
+    var _personagem = instance_place(x, y - 5, obj_personagem);
+    
+    //Entrando no personagem
+    if (_buraco || _personagem)
+    {
+        show_debug_message("kkkkk");
+        if (keyboard_check_pressed(vk_enter))
+        {
+            troca_estado(estado_entrando);
+        }
     }
     
 }
@@ -81,19 +98,15 @@ estado_idle.finaliza = function()
 
 estado_walk.inicia = function()
 {
-    sprites_atuais =
-    {
-        lado  : spr_ameba_verde_walk_lado,
-        cima  : spr_ameba_verde_walk_cima,
-        baixo : spr_ameba_verde_walk_baixo
-    }
+    estado_txt = "walk";
+    minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
     
-    troca_sprite(dir, sprites_atuais);
+    troca_sprite(dir, minhas_sprites);
 }
 
 estado_walk.roda = function()
 {
-    troca_sprite(dir, sprites_atuais);
+    troca_sprite(dir, minhas_sprites);
     checa_inputs();
     aplica_velocidade();
     
@@ -110,6 +123,13 @@ estado_walk.roda = function()
             troca_estado(estado_entrando);
         }
     }
+    
+    
+    //Se eu parei eu fico parado
+    if (velh == 0 && velv == 0)
+    {
+        troca_estado(estado_idle);
+    }
 }
 
 #endregion
@@ -121,16 +141,13 @@ estado_walk.roda = function()
 //Iniciando o estado
 estado_entrando.inicia = function()
 {
+    estado_txt = "entrando";
+    
     y -= 8;
     image_index = 0;
-    sprites_atuais = 
-    {
-        lado  : spr_ameba_verde_entra,
-        cima  : spr_ameba_verde_entra,
-        baixo : spr_ameba_verde_entra
-    }
+    minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
     
-    troca_sprite(dir, sprites_atuais);
+    troca_sprite(dir, minhas_sprites);
 }
 
 estado_entrando.roda = function()
