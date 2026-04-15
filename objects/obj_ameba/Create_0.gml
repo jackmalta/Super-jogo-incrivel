@@ -13,15 +13,15 @@ max_vel = 1;
 dir = 0;
 sprites_atuais =
 {
-    lado  : spr_ameba_idle_lado,
-    cima  : spr_ameba_idle_costas,
-    baixo : spr_ameba_idle_frente
+    lado  : spr_ameba_verde_idle_lado,
+    cima  : spr_ameba_verde_idle_cima,
+    baixo : spr_ameba_verde_idle_baixo
 };
 
 //Variável com as colisões
 var _tile = layer_tilemap_get_id("Colisao");
 
-colisoes = [_tile];
+colisoes = [_tile, obj_personagem];
 
 //Meus controles
 up      = 0;
@@ -48,9 +48,9 @@ estado_idle.inicia = function()
 {
     sprites_atuais =
     {
-        lado  : spr_ameba_idle_lado,
-        cima  : spr_ameba_idle_costas,
-        baixo : spr_ameba_idle_frente
+        lado  : spr_ameba_verde_idle_lado,
+        cima  : spr_ameba_verde_idle_cima,
+        baixo : spr_ameba_verde_idle_baixo
     }
     
     troca_sprite(dir, sprites_atuais);
@@ -83,9 +83,9 @@ estado_walk.inicia = function()
 {
     sprites_atuais =
     {
-        lado  : spr_ameba_walk_lado,
-        cima  : spr_ameba_walk_costas,
-        baixo : spr_ameba_walk_frente
+        lado  : spr_ameba_verde_walk_lado,
+        cima  : spr_ameba_verde_walk_cima,
+        baixo : spr_ameba_verde_walk_baixo
     }
     
     troca_sprite(dir, sprites_atuais);
@@ -125,9 +125,9 @@ estado_entrando.inicia = function()
     image_index = 0;
     sprites_atuais = 
     {
-        lado  : spr_ameba_entra,
-        cima  : spr_ameba_entra,
-        baixo : spr_ameba_entra
+        lado  : spr_ameba_verde_entra,
+        cima  : spr_ameba_verde_entra,
+        baixo : spr_ameba_verde_entra
     }
     
     troca_sprite(dir, sprites_atuais);

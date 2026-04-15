@@ -32,12 +32,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ameba_idle_frente",
-    "path":"sprites/spr_ameba_idle_frente/spr_ameba_idle_frente.yy",
+    "name":"spr_ameba_verde_idle_baixo",
+    "path":"sprites/spr_ameba_verde_idle_baixo/spr_ameba_verde_idle_baixo.yy",
   },
   "spriteMaskId":{
-    "name":"spr_ameba_idle_frente",
-    "path":"sprites/spr_ameba_idle_frente/spr_ameba_idle_frente.yy",
+    "name":"spr_ameba_verde_idle_baixo",
+    "path":"sprites/spr_ameba_verde_idle_baixo/spr_ameba_verde_idle_baixo.yy",
   },
   "visible":true,
 }
