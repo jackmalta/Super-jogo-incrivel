@@ -23,7 +23,7 @@ minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
 //Variável com as colisões
 var _tile = layer_tilemap_get_id("Colisao");
 
-colisoes = [_tile, obj_personagem];
+colisoes = [_tile, obj_personagem, obj_colisao];
 
 
 
@@ -41,9 +41,12 @@ right   = 0;
 
 
 #region cria estados
-estado_idle = new estado();
-estado_walk = new estado();
+estado_idle     = new estado();
+estado_walk     = new estado();
 estado_entrando = new estado();
+estado_comido   = new estado();
+estado_cuspido  = new estado();
+
 #endregion
 
 #region estados
@@ -90,6 +93,41 @@ estado_idle.roda = function()
 estado_idle.finaliza = function()
 {
     
+}
+
+#endregion
+
+#region estado comido
+
+estado_comido.inicia = function()
+{
+    estado_txt = "estado comido";
+    visible = false;
+}
+
+estado_comido.finaliza = function()
+{
+    visible = true;
+}
+
+#endregion
+
+#region estado cuspido
+estado_cuspido.inicia = function()
+{
+    estado_txt = "saindo";
+    minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
+    image_index = 0;
+    troca_sprite(dir, minhas_sprites);
+}
+
+estado_cuspido.roda = function()
+{
+    //Acabou a animação, eu fico idle
+    if (image_index > image_number-1)
+    {
+        troca_estado(estado_idle);
+    }
 }
 
 #endregion
@@ -143,7 +181,7 @@ estado_entrando.inicia = function()
 {
     estado_txt = "entrando";
     
-    y -= 8;
+    y += 2;
     image_index = 0;
     minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
     
@@ -218,6 +256,35 @@ aplica_velocidade = function()
     velv = (down - up) * max_vel;
     
     move_and_collide(velh, velv, colisoes);
+}
+
+
+sendo_comido = function()
+{
+    //Se eu não estou ainda no estado sendo comido, eu vou para ele.
+    if (estado_atual != estado_comido)
+    {
+        troca_estado(estado_comido);
+    }
+}
+
+
+
+
+sendo_cuspido = function()
+{
+    //Só posso ser cuspido se eu fui comido
+    if (estado_atual == estado_comido)
+    {
+        
+        //Trocando a minha cor
+        cor_txt = cor_txt == "verde" ? "vermelha" : "verde";
+        
+        troca_estado(estado_cuspido);
+        
+        
+        
+    }
 }
 
 

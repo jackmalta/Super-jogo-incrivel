@@ -109,6 +109,34 @@ var _personagem_verde =
 
 #endregion
 
+#region vermelha
+var _personagem_vermelha = 
+{
+    idle:
+    {
+        cima    : spr_personagem_vermelha_idle_cima,
+        baixo   : spr_personagem_vermelha_idle_baixo,
+        lado    : spr_personagem_vermelha_idle_lado,
+    },
+    
+    walk:
+    {
+        cima    : spr_personagem_vermelha_walk_cima,
+        baixo   : spr_personagem_vermelha_walk_baixo,
+        lado    : spr_personagem_vermelha_walk_lado
+    },
+    
+    transicao:
+    {
+        entrando    : spr_personagem_vermelha_entrando,
+        saindo      : spr_personagem_vermelha_saindo,
+        vazio       : spr_personagem_vazio
+    }
+};
+
+#endregion
+
+
 #endregion
 
 global.lista_sprites = 
@@ -121,7 +149,8 @@ global.lista_sprites =
     
     personagem :
     {
-        verde : _personagem_verde
+        verde       : _personagem_verde,
+        vermelha    : _personagem_vermelha
     }
 };
 
