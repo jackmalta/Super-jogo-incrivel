@@ -36,17 +36,7 @@ estado_idle.inicia = function()
 
 estado_idle.roda = function()
 {
-    if (keyboard_check_pressed(vk_enter))
-    {
-        troca_estado(estado_pega);
-    }
-    
-    if (keyboard_check_pressed(vk_backspace))
-    {
-        troca_estado(estado_solta);
-    }
-    
-    
+
     //Se eu posso cuspir o player, eu vou ficar tremendo
     if (pode_cuspir)
     {
@@ -105,7 +95,7 @@ estado_pega.inicia = function()
 estado_pega.roda = function()
 {
     //Terminou a animação eu fico parado novamente
-    if (image_index > image_number - 1)
+    if (acabou_animacao())
     {
         troca_estado(estado_idle);
     }
@@ -145,7 +135,7 @@ estado_solta.inicia = function()
 estado_solta.roda = function()
 {
     //Terminou a animação eu fico parado novamente
-    if (image_index > image_number - 1)
+    if (acabou_animacao())
     {
         troca_estado(estado_idle);
     }

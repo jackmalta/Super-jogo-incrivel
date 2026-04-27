@@ -6,4 +6,4 @@ draw_self();
 
 
 
-//draw_text(x, y - 50, estado_txt);
+//draw_text(x, y - 50, cor_txt);

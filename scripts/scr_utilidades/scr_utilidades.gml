@@ -13,8 +13,35 @@ function troca_sprite(_dir, _struct_sprites)
     }
 }
 
+//Função para avisar se a animação acabou
+function acabou_animacao()
+{
+    //Checando se tem uma sprite
+    if (sprite_index != -1)
+    {
+        //Checando se a animação acabou
+        var _spd = sprite_get_speed(sprite_index) / game_get_speed(gamespeed_fps);
+        if (image_index + _spd >= image_number)
+        {
+            return true;
+        }
+    }
+    
+    return false;
+}
 
 
+//Função para definir as minhas sprites
+function define_sprite(_entidade_txt, _cor_txt, _estado_txt)
+{
+    var _entidade   = _entidade_txt == undefined    ? entidade_txt  : _entidade_txt;
+    var _cor        = _cor_txt == undefined         ? cor_txt       : _cor_txt;
+    var _estado     = _estado_txt == undefined      ? estado_txt    : _estado_txt;
+    
+    minhas_sprites  = global.lista_sprites[$ _entidade][$ _cor][$ _estado];
+    
+    image_index     = 0;
+}
 
 //Minha função para criar as colisões
 function cria_colisao()

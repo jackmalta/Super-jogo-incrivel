@@ -4,9 +4,16 @@
 
 #region variaveis
 
-minhas_sprites = global.lista_sprites.personagem.vermelha;
+
 
 dir = 3;
+
+entidade_txt    = "personagem";
+cor_txt         = "verde";
+estado_txt      = "idle";
+
+minhas_sprites = noone;
+minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
 
 espera_tiro = 10;
 delay_tiro  = 0;
@@ -49,14 +56,16 @@ estado_vazio.inicia = function()
 #region estado preenche
 estado_preenche.inicia = function()
 {
-    sprite_index = minhas_sprites.transicao.entrando;
-    image_index  = 0;
+    estado_txt = "idle";
+    define_sprite( , , "entrando");
+    troca_sprite(dir, minhas_sprites);
+    
 }
 
 estado_preenche.roda = function()
 {
     //Se a animação acabou, eu troco de estado
-    if (image_index >= image_number - 1)
+    if (acabou_animacao())
     {
         troca_estado(estado_idle);
     }
@@ -78,13 +87,15 @@ estado_cheio.inicia = function()
 
 estado_idle.inicia = function()
 {
-    troca_sprite(dir, minhas_sprites.idle);
-    image_index = 0;
+    estado_txt = "idle";
+    define_sprite();
+    troca_sprite(dir, minhas_sprites);
+    
 }
 
 estado_idle.roda = function()
 {
-    troca_sprite(dir, minhas_sprites.idle);
+    troca_sprite(dir, minhas_sprites);
     checa_inputs();
     atirando();
     ajusta_direcao();
@@ -101,13 +112,15 @@ estado_idle.roda = function()
 
 estado_walk.inicia = function()
 {
-    troca_sprite(dir, minhas_sprites.walk);
-    image_index = 0;
+    estado_txt = "walk";
+    define_sprite();
+    
+    troca_sprite(dir, minhas_sprites);
 }
 
 estado_walk.roda = function()
 {
-    troca_sprite(dir, minhas_sprites.walk);
+    troca_sprite(dir, minhas_sprites);
     checa_inputs();
     aplica_velocidade();
     ajusta_direcao();
@@ -128,6 +141,11 @@ estado_walk.roda = function()
 #endregion
 
 #region metodos
+
+troca_cor = function(_cor = "verde")
+{
+    cor_txt = _cor;
+}
 
 checa_inputs = function()
 {

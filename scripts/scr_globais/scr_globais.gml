@@ -99,11 +99,18 @@ var _personagem_verde =
         lado    : spr_personagem_verde_walk_lado
     },
     
-    transicao:
+    entrando:
     {
-        entrando    : spr_personagem_verde_entrando,
-        saindo      : spr_personagem_verde_saindo,
-        vazio       : spr_personagem_vazio
+        cima    : spr_personagem_verde_entrando,
+        baixo   : spr_personagem_verde_entrando,
+        lado    : spr_personagem_verde_entrando
+    },
+    
+    saindo:
+    {
+        cima    : spr_personagem_verde_saindo,
+        baixo   : spr_personagem_verde_saindo,
+        lado    : spr_personagem_verde_saindo
     }
 };
 
@@ -126,11 +133,18 @@ var _personagem_vermelha =
         lado    : spr_personagem_vermelha_walk_lado
     },
     
-    transicao:
+    entrando:
     {
-        entrando    : spr_personagem_vermelha_entrando,
-        saindo      : spr_personagem_vermelha_saindo,
-        vazio       : spr_personagem_vazio
+        cima    : spr_personagem_vermelha_entrando,
+        baixo   : spr_personagem_vermelha_entrando,
+        lado    : spr_personagem_vermelha_entrando
+    },
+    
+    saindo:
+    {
+        cima    : spr_personagem_vermelha_saindo,
+        baixo   : spr_personagem_vermelha_saindo,
+        lado    : spr_personagem_vermelha_saindo
     }
 };
 

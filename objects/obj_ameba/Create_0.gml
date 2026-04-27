@@ -56,7 +56,7 @@ estado_cuspido  = new estado();
 estado_idle.inicia = function()
 {
     estado_txt = "idle";
-    minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
+    define_sprite();
     
     troca_sprite(dir, minhas_sprites);
 }
@@ -116,15 +116,14 @@ estado_comido.finaliza = function()
 estado_cuspido.inicia = function()
 {
     estado_txt = "saindo";
-    minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
-    image_index = 0;
+    define_sprite();
     troca_sprite(dir, minhas_sprites);
 }
 
 estado_cuspido.roda = function()
 {
     //Acabou a animação, eu fico idle
-    if (image_index > image_number-1)
+    if (acabou_animacao())
     {
         troca_estado(estado_idle);
     }
@@ -137,7 +136,7 @@ estado_cuspido.roda = function()
 estado_walk.inicia = function()
 {
     estado_txt = "walk";
-    minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
+    define_sprite();
     
     troca_sprite(dir, minhas_sprites);
 }
@@ -182,8 +181,7 @@ estado_entrando.inicia = function()
     estado_txt = "entrando";
     
     y += 2;
-    image_index = 0;
-    minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
+    define_sprite();
     
     troca_sprite(dir, minhas_sprites);
 }
@@ -194,7 +192,7 @@ estado_entrando.roda = function()
     var _buraco = instance_place(x, y - 5, obj_buraco_menu);
     var _personagem = instance_place(x, y - 5, obj_personagem);
     //Se a minha animação acabou, eu morro
-    if (image_index >= image_number-1)
+    if (acabou_animacao())
     {
         if (_buraco)
         {
@@ -207,6 +205,7 @@ estado_entrando.roda = function()
         {
             with(_personagem)
             {
+                troca_cor(other.cor_txt);
                 troca_estado(estado_preenche);
             }
         }
