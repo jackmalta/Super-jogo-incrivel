@@ -66,6 +66,7 @@
     {"id":{"name":"obj_buraco_menu","path":"objects/obj_buraco_menu/obj_buraco_menu.yy",},},
     {"id":{"name":"obj_colisao","path":"objects/obj_colisao/obj_colisao.yy",},},
     {"id":{"name":"obj_entidade","path":"objects/obj_entidade/obj_entidade.yy",},},
+    {"id":{"name":"obj_olho","path":"objects/obj_olho/obj_olho.yy",},},
     {"id":{"name":"obj_personagem","path":"objects/obj_personagem/obj_personagem.yy",},},
     {"id":{"name":"obj_tentaculo","path":"objects/obj_tentaculo/obj_tentaculo.yy",},},
     {"id":{"name":"obj_tiro_player","path":"objects/obj_tiro_player/obj_tiro_player.yy",},},
