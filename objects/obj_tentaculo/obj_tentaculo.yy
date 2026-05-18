@@ -13,7 +13,10 @@
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_perigo",
+    "path":"objects/obj_perigo/obj_perigo.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,6 +38,9 @@
     "name":"spr_tentaculo_idle",
     "path":"sprites/spr_tentaculo_idle/spr_tentaculo_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_tentaculo_idle",
+    "path":"sprites/spr_tentaculo_idle/spr_tentaculo_idle.yy",
+  },
   "visible":true,
 }

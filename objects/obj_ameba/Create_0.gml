@@ -10,6 +10,11 @@ velh = 0;
 velv = 0;
 max_vel = 1;
 
+//Timer para criar o perigo
+tempo_perigo = 60;
+timer_perigo = tempo_perigo;
+
+
 //Eu preciso saber quais as minhas informações
 cor_txt         = "verde";
 estado_txt      = "idle";
