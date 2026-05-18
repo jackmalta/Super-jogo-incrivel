@@ -16,6 +16,9 @@ img_ind = 0;
 tempo_timido = 120;
 timer_timido = tempo_timido;
 
+//Definindo meu alvo
+alvo = global.player_atual;
+
 txt_estado = "idle";
 #endregion
 
@@ -166,6 +169,17 @@ estado_sumindo.roda = function()
 
 #endregion
 
+
+#endregion
+
+
+#region metodos
+
+//Método para atualizar o meu... alvo
+atualiza_alvo = function()
+{
+    alvo = global.player_atual;
+}
 
 #endregion
 

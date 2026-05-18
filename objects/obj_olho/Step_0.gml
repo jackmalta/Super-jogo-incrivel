@@ -4,12 +4,17 @@ roda_estado();
 
 
 
-
+var _player_dir = 0;
+var _player_olha = 0;
 
 //Checando se o player esta olhando na minha direção
 //TODO arrumar a referência
-var _player_dir = obj_ameba.dir;
-var _player_olha = round(point_direction(obj_ameba.x, obj_ameba.y, x, y) / 90);
+//Se meu alvo existe, aí eu dou um valor para o bagui
+if (instance_exists(alvo))
+{
+    _player_dir = alvo.dir;
+    _player_olha = round(point_direction(alvo.x, alvo.y, x, y) / 90);
+}
 
 //Se ele esta olhando na minha direção, eu vou diminuir a distancia do olho
 if (_player_dir == _player_olha)

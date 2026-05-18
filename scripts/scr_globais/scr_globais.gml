@@ -2,6 +2,12 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
 
+#region Variaveis globais normais
+
+global.player_atual = noone;
+
+#endregion
+
 
 #region amebas
 
@@ -153,6 +159,9 @@ var _personagem_vermelha =
 
 #endregion
 
+
+#region estruturas
+
 global.lista_sprites = 
 {
     ameba :
@@ -168,9 +177,15 @@ global.lista_sprites =
     }
 };
 
+#endregion
+
+
+#region limpeza
+
 //Já usei a struct _verde, eu posso deletar ela
 delete _personagem_verde;
 delete _ameba_verde;
 delete _ameba_vermelha;
 
+#endregion
 

@@ -3,6 +3,9 @@
 //Iniciando o estado idle
 
 
+//Vou avisar que eu sou o player atual
+global.player_atual = id;
+
 cria_colisao();
 
 #region variaveis
@@ -28,7 +31,7 @@ minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
 //Variável com as colisões
 var _tile = layer_tilemap_get_id("Colisao");
 
-colisoes = [_tile, obj_personagem, obj_colisao];
+colisoes = [_tile, obj_personagem, obj_colisao, obj_entidade];
 
 
 
@@ -213,7 +216,21 @@ estado_entrando.roda = function()
                 troca_cor(other.cor_txt);
                 troca_estado(estado_preenche);
             }
+            
+            //Eu vou avisar que o player atual é o personagem
+            global.player_atual = _personagem;
+            
+            //Vou checar se tem algum olho
+            if (instance_exists(obj_olho))
+            {
+                with(obj_olho)
+                {
+                    atualiza_alvo();
+                }
+            }
         }
+        
+        
         
         instance_destroy();
     }

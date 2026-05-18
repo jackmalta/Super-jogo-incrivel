@@ -10,11 +10,18 @@ var _alt    = sprite_height;
 var _x      = x + _larg/2;
 var _y      = y + _alt/2;
 
-//TODO arruma a referência
-var _alvo_x = obj_ameba.x;
-var _alvo_y = obj_ameba.y;
+var _alvo_x = x;
+var _alvo_y = y;
 
+//Se o alvo existe eu pego os valores dele
+if (instance_exists(alvo))
+{
+    //TDO ma a referência
+    _alvo_x = alvo.x;
+    _alvo_y = alvo.y;
+}
 var _dir_mouse = point_direction(_x, _y, _alvo_x, _alvo_y);
+
 
 //Só vou olhar na direção do player, se, somente se, eu não estou abrindo
 if (estado_atual != estado_abrindo)
