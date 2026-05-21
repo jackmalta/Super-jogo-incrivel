@@ -19,14 +19,14 @@ timer_perigo = tempo_perigo;
 
 
 //Eu preciso saber quais as minhas informações
-cor_txt         = "verde";
+tipo_txt        = "verde";
 estado_txt      = "idle";
 entidade_txt    = "ameba";
  
 
 
 dir = 0;
-minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
+minhas_sprites = global.lista_sprites[$ entidade_txt][$ tipo_txt][$ estado_txt];
 
 //Variável com as colisões
 var _tile = layer_tilemap_get_id("Colisao");
@@ -64,7 +64,7 @@ estado_cuspido  = new estado();
 estado_idle.inicia = function()
 {
     estado_txt = "idle";
-    define_sprite();
+    minhas_sprites = define_sprite();
     
     troca_sprite(dir, minhas_sprites);
 }
@@ -124,7 +124,7 @@ estado_comido.finaliza = function()
 estado_cuspido.inicia = function()
 {
     estado_txt = "saindo";
-    define_sprite();
+    minhas_sprites = define_sprite();
     troca_sprite(dir, minhas_sprites);
 }
 
@@ -144,7 +144,7 @@ estado_cuspido.roda = function()
 estado_walk.inicia = function()
 {
     estado_txt = "walk";
-    define_sprite();
+    minhas_sprites = define_sprite();
     
     troca_sprite(dir, minhas_sprites);
 }
@@ -189,7 +189,7 @@ estado_entrando.inicia = function()
     estado_txt = "entrando";
     
     y += 2;
-    define_sprite();
+    minhas_sprites = define_sprite();
     
     troca_sprite(dir, minhas_sprites);
 }
@@ -213,7 +213,7 @@ estado_entrando.roda = function()
         {
             with(_personagem)
             {
-                troca_cor(other.cor_txt);
+                troca_cor(other.tipo_txt);
                 troca_estado(estado_preenche);
             }
             
@@ -299,7 +299,7 @@ sendo_cuspido = function()
     {
         
         //Trocando a minha cor
-        cor_txt = cor_txt == "verde" ? "vermelha" : "verde";
+        tipo_txt = tipo_txt == "verde" ? "vermelha" : "verde";
         
         troca_estado(estado_cuspido);
         

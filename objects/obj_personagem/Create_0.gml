@@ -9,11 +9,11 @@
 dir = 3;
 
 entidade_txt    = "personagem";
-cor_txt         = "verde";
+tipo_txt         = "verde";
 estado_txt      = "idle";
 
 minhas_sprites = noone;
-minhas_sprites = global.lista_sprites[$ entidade_txt][$ cor_txt][$ estado_txt];
+minhas_sprites = global.lista_sprites[$ entidade_txt][$ tipo_txt][$ estado_txt];
 
 espera_tiro = 10;
 delay_tiro  = 0;
@@ -57,7 +57,7 @@ estado_vazio.inicia = function()
 estado_preenche.inicia = function()
 {
     estado_txt = "idle";
-    define_sprite( , , "entrando");
+    minhas_sprites = define_sprite( , , "entrando");
     troca_sprite(dir, minhas_sprites);
     
 }
@@ -88,7 +88,7 @@ estado_cheio.inicia = function()
 estado_idle.inicia = function()
 {
     estado_txt = "idle";
-    define_sprite();
+    minhas_sprites = define_sprite();
     troca_sprite(dir, minhas_sprites);
     
 }
@@ -113,7 +113,7 @@ estado_idle.roda = function()
 estado_walk.inicia = function()
 {
     estado_txt = "walk";
-    define_sprite();
+    minhas_sprites = define_sprite();
     
     troca_sprite(dir, minhas_sprites);
 }
@@ -144,7 +144,7 @@ estado_walk.roda = function()
 
 troca_cor = function(_cor = "verde")
 {
-    cor_txt = _cor;
+    tipo_txt = _cor;
 }
 
 checa_inputs = function()

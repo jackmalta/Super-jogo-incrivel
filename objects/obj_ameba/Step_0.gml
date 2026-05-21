@@ -15,7 +15,7 @@ if (timer_perigo <= 0)
     {
         _obj = obj_tentaculo;
     }
-    cria_perigo(_obj, 4);
+    //cria_perigo(_obj, 4);
     
     timer_perigo = tempo_perigo;
 }

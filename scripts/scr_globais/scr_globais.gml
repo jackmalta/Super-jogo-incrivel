@@ -160,6 +160,58 @@ var _personagem_vermelha =
 #endregion
 
 
+#region Inimigos
+
+var _inimigo_canhao =
+{
+    atira   :
+    {
+        cima    : spr_inimigo_canhao_atira_back,
+        baixo   : spr_inimigo_canhao_atira_front,
+        lado    : spr_inimigo_canhao_atira_side,
+    },
+    
+    espera  :
+    {
+        cima    : spr_inimigo_canhao_espera_back,
+        baixo   : spr_inimigo_canhao_espera_front,
+        lado    : spr_inimigo_canhao_espera_side,
+    },
+    
+    idle   :
+    {
+        cima    : spr_inimigo_canhao_idle_back,
+        baixo   : spr_inimigo_canhao_idle_front,
+        lado    : spr_inimigo_canhao_idle_side,
+    },
+    
+    prepara   :
+    {
+        cima    : spr_inimigo_canhao_prepara_back,
+        baixo   : spr_inimigo_canhao_prepara_front,
+        lado    : spr_inimigo_canhao_prepara_side,
+    },
+    
+    recarga   :
+    {
+        cima    : spr_inimigo_canhao_recarga_back,
+        baixo   : spr_inimigo_canhao_recarga_front,
+        lado    : spr_inimigo_canhao_recarga_side,
+    },
+    
+    walk   :
+    {
+        cima    : spr_inimigo_canhao_walk_back,
+        baixo   : spr_inimigo_canhao_walk_front,
+        lado    : spr_inimigo_canhao_walk_side,
+    },
+    
+}
+
+
+#endregion
+
+
 #region estruturas
 
 global.lista_sprites = 
@@ -174,6 +226,11 @@ global.lista_sprites =
     {
         verde       : _personagem_verde,
         vermelha    : _personagem_vermelha
+    },
+    
+    inimigo :
+    {
+        canhao      : _inimigo_canhao
     }
 };
 
@@ -186,6 +243,7 @@ global.lista_sprites =
 delete _personagem_verde;
 delete _ameba_verde;
 delete _ameba_vermelha;
+delete _inimigo_canhao;
 
 #endregion
 

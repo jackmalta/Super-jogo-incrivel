@@ -32,15 +32,18 @@ function acabou_animacao()
 
 
 //Função para definir as minhas sprites
-function define_sprite(_entidade_txt, _cor_txt, _estado_txt)
+function define_sprite(_entidade_txt, _tipo_txt, _estado_txt)
 {
-    var _entidade   = _entidade_txt == undefined    ? entidade_txt  : _entidade_txt;
-    var _cor        = _cor_txt == undefined         ? cor_txt       : _cor_txt;
-    var _estado     = _estado_txt == undefined      ? estado_txt    : _estado_txt;
+    var _entidade   = _entidade_txt == undefined        ? entidade_txt  : _entidade_txt;
+    var _tipo        = _tipo_txt == undefined           ? tipo_txt       : _tipo_txt;
+    var _estado     = _estado_txt == undefined          ? estado_txt    : _estado_txt;
     
-    minhas_sprites  = global.lista_sprites[$ _entidade][$ _cor][$ _estado];
+    var _minhas_sprites  = global.lista_sprites[$ _entidade][$ _tipo][$ _estado];
     
     image_index     = 0;
+    
+    //Retornando a lista de sprites
+    return _minhas_sprites;
 }
 
 //Minha função para criar as colisões
