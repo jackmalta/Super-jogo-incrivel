@@ -1,23 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inimigo_canhao",
+  "%Name":"obj_inimigo_canhao_projetil",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_inimigo_canhao",
+  "name":"obj_inimigo_canhao_projetil",
   "overriddenProperties":[],
   "parent":{
     "name":"Canhao",
     "path":"folders/Objects/Inimigos/Canhao.yy",
   },
-  "parentObjectId":{
-    "name":"obj_entidade",
-    "path":"objects/obj_entidade/obj_entidade.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -36,12 +32,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inimigo_canhao_idle_front",
-    "path":"sprites/spr_inimigo_canhao_idle_front/spr_inimigo_canhao_idle_front.yy",
+    "name":"spr_inimigo_canhao_projetil_indo_side",
+    "path":"sprites/spr_inimigo_canhao_projetil_indo_side/spr_inimigo_canhao_projetil_indo_side.yy",
   },
   "spriteMaskId":{
-    "name":"spr_inimigo_canhao_idle_front",
-    "path":"sprites/spr_inimigo_canhao_idle_front/spr_inimigo_canhao_idle_front.yy",
+    "name":"spr_inimigo_canhao_projetil_indo_side",
+    "path":"sprites/spr_inimigo_canhao_projetil_indo_side/spr_inimigo_canhao_projetil_indo_side.yy",
   },
   "visible":true,
 }

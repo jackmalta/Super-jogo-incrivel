@@ -61,7 +61,7 @@
     },
     "name":"spr_inimigo_canhao_projetil_impacto_front",
     "playback":1,
-    "playbackSpeed":10.0,
+    "playbackSpeed":18.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

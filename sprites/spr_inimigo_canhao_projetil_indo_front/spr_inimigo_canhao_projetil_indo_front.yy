@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"7393c1a1-c5bc-4d5e-bac9-3aeeef96a228","name":"7393c1a1-c5bc-4d5e-bac9-3aeeef96a228","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d4bee387-4ed0-4a92-8db1-25f47deac5da","name":"d4bee387-4ed0-4a92-8db1-25f47deac5da","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":14,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d223a165-c106-40a7-88ba-8962e7730617","blendMode":0,"displayName":"default","isLocked":false,"name":"d223a165-c106-40a7-88ba-8962e7730617","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0822bf54-ce25-4845-b50c-3f4fd0d825c2","blendMode":0,"displayName":"default","isLocked":false,"name":"0822bf54-ce25-4845-b50c-3f4fd0d825c2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_inimigo_canhao_projetil_indo_front",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7393c1a1-c5bc-4d5e-bac9-3aeeef96a228","path":"sprites/spr_inimigo_canhao_projetil_indo_front/spr_inimigo_canhao_projetil_indo_front.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fa22094a-9822-416e-84d0-24fbbebc832d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d4bee387-4ed0-4a92-8db1-25f47deac5da","path":"sprites/spr_inimigo_canhao_projetil_indo_front/spr_inimigo_canhao_projetil_indo_front.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0c0fcc11-f4c8-44b5-ae44-f27d7dd04683","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

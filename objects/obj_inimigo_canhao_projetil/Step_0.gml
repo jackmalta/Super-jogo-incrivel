@@ -1,7 +1,10 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-draw_self();
+roda_estado();
+
+x += velh;
+y += velv;
 
 
-//Desenhando meu destino
-//draw_circle(destino_x, destino_y, 10, true);
+
+if (velh != 0) image_xscale = sign(velh);

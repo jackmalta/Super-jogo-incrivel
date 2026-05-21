@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"0a3951d2-41a1-4a13-ac8b-76d9c244dc71","name":"0a3951d2-41a1-4a13-ac8b-76d9c244dc71","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7393c1a1-c5bc-4d5e-bac9-3aeeef96a228","name":"7393c1a1-c5bc-4d5e-bac9-3aeeef96a228","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":14,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"0bde8e28-2236-4a3e-a272-e08a145188ee","blendMode":0,"displayName":"default","isLocked":false,"name":"0bde8e28-2236-4a3e-a272-e08a145188ee","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d223a165-c106-40a7-88ba-8962e7730617","blendMode":0,"displayName":"default","isLocked":false,"name":"d223a165-c106-40a7-88ba-8962e7730617","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_inimigo_canhao_projetil_indo_back",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0a3951d2-41a1-4a13-ac8b-76d9c244dc71","path":"sprites/spr_inimigo_canhao_projetil_indo_back/spr_inimigo_canhao_projetil_indo_back.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"77179619-c544-47b8-ad34-9bd8af1ff1e5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7393c1a1-c5bc-4d5e-bac9-3aeeef96a228","path":"sprites/spr_inimigo_canhao_projetil_indo_back/spr_inimigo_canhao_projetil_indo_back.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fa22094a-9822-416e-84d0-24fbbebc832d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
