@@ -173,6 +173,7 @@
     {"id":{"name":"spr_personagem_vermelha_walk_baixo","path":"sprites/spr_personagem_vermelha_walk_baixo/spr_personagem_vermelha_walk_baixo.yy",},},
     {"id":{"name":"spr_personagem_vermelha_walk_cima","path":"sprites/spr_personagem_vermelha_walk_cima/spr_personagem_vermelha_walk_cima.yy",},},
     {"id":{"name":"spr_personagem_vermelha_walk_lado","path":"sprites/spr_personagem_vermelha_walk_lado/spr_personagem_vermelha_walk_lado.yy",},},
+    {"id":{"name":"spr_sombra","path":"sprites/spr_sombra/spr_sombra.yy",},},
     {"id":{"name":"spr_tentaculo_idle","path":"sprites/spr_tentaculo_idle/spr_tentaculo_idle.yy",},},
     {"id":{"name":"spr_tentaculo_saindo","path":"sprites/spr_tentaculo_saindo/spr_tentaculo_saindo.yy",},},
     {"id":{"name":"spr_tentaculo_voltando","path":"sprites/spr_tentaculo_voltando/spr_tentaculo_voltando.yy",},},

@@ -1,5 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
+
+event_inherited();
 vel = 4;
 velh = 0;
 velv = 0;

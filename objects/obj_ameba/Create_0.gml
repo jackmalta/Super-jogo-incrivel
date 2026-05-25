@@ -2,7 +2,7 @@
 // Você pode escrever seu código neste editor
 //Iniciando o estado idle
 
-
+event_inherited();
 //Vou avisar que eu sou o player atual
 global.player_atual = id;
 
